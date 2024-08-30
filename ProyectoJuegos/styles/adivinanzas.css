@@ -1,0 +1,196 @@
+* {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+/*pantalla inicial*/
+#pantallaInicial {
+  margin-top: 20%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.h1Trivia{
+  margin-bottom: 50px;
+}
+
+/*juego*/
+#pantallaJuego {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 1% auto;
+  text-align: center;
+  display: none;
+}
+.seccion1{
+  background-color: #ecebeb;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.info {
+  height: 50px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: #000000;
+}
+
+#imgBandera{
+  height: 200px;
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.opcionAdivinar {
+  width: 300px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.letra {
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 35px;
+  border: 5px solid #4d036e;
+  position: relative;
+  z-index: 1;
+}
+
+.nombre {
+  background-color: #4d036e;
+  width: 100%;
+  font-size: 25px;
+  position: absolute;
+  margin-left: 30px;
+  border-radius: 0 20px 20px;
+  padding: 7px 0 7px 0 30px;
+  color: #fff;
+  z-index: 0;
+}
+
+.opcionAdivinar:hover {
+  transform: scale(1.1);
+  border-radius: 40px 40px 40px;
+}
+
+.nombre:hover {
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.1);
+
+}
+
+/*modals*/
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Fondo oscuro semitransparente */
+}
+
+.ContenidoModal {
+  text-align: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+
+#mensajeDerrota>.ContenidoModal {
+  background-color: brown;
+
+}
+
+#mensajeVictoria>.ContenidoModal {
+  background-color: rgb(75, 226, 100);
+}
+
+/*fondo*/
+
+#videoBG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.btnCustom {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #000;
+  background: #ffffff;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: "Pixelify Sans", sans-serif;
+  margin-bottom: 20px;
+ }
+ 
+.btnCustom:before, .btnCustom:after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  transition: all .2s linear;
+ }
+ 
+ .btnCustom:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+ }
+ 
+ .btnCustom:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+
+ .btnCustom:active {
+  transform: scale(0.95);
+ }
+ 
+ .btnCustom:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+ }
+ 
+ .btnCustom:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+ }
+ 
+ .btnCustom span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }

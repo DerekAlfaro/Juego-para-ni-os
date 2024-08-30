@@ -1,0 +1,163 @@
+/*video de fondo*/
+#videoBG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra toda el área */
+  z-index: -1;
+}
+/*bienvenida*/
+.bienvenida {
+  margin-top: 20%;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.formComenzar{
+  margin-top: 30px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.input{
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btnCustom {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #000;
+  background: #ffffff;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: "Pixelify Sans", sans-serif;
+  margin-bottom: 20px;
+ }
+ 
+.btnCustom:before, .btnCustom:after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  transition: all .2s linear;
+ }
+ 
+ .btnCustom:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+ }
+ 
+ .btnCustom:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+
+ .btnCustom:active {
+  transform: scale(0.95);
+ }
+ 
+ .btnCustom:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+ }
+ 
+ .btnCustom:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+ }
+ 
+ .btnCustom span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }
+
+/*elegirjuegos*/
+.elegirJuego {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #020202;
+  text-align: center;
+  align-items: center;
+  padding: 15%;
+}
+
+.btnSalir {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #000;
+  background: #ffffff;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: "Pixelify Sans", sans-serif;
+ }
+ 
+.btnSalir:before, .btnSalir:after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  transition: all .2s linear;
+ }
+ 
+ .btnSalir:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+  
+ }
+ 
+ .btnSalir:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+
+ .btnSalir:active {
+  transform: scale(0.95);
+ }
+ 
+ .btnSalir:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+  background: #ff0000;
+ }
+ 
+ .btnSalir:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+  background: #ff0000;
+ }
+
+ .btnSalir:hover {
+  background: #ff0000;
+ }
+ 
+ .btnSalir span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }
+
+.botones {
+  margin: 40px auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

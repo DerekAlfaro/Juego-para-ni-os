@@ -1,0 +1,380 @@
+* {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+/*video del fondo*/
+#videoBG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.mainMemoria {
+  width: 100%; 
+  max-width: 600px; 
+  margin: 5% auto; 
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*----------------Facil------------------------ */
+.seccion1 {
+  padding: 15px 30px;
+  background-color: rgb(255, 174, 174);
+  border-radius: 10px 0 0 10px;
+  width: 100%; 
+  max-width: 800px; 
+}
+
+table{
+  margin-top: 10px;
+}
+
+.seccion2 {
+  background-color: rgb(255, 174, 174);
+  border-radius: 0 10px 10px 0;
+  width: 100%; 
+  max-width: 350px; 
+  padding: 20px;
+  margin: 0 auto; 
+}
+
+.estadistica{
+  box-sizing: border-box;
+  height: 90px;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+	justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid #ffffff;
+}
+
+#username{
+  text-align: center;
+}
+
+.botones{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*----------------Dificil------------------------ */
+.mainMemoriaDificil {
+  width: 100%; 
+  max-width: 600px; 
+  margin: 5% auto; 
+  display: flex;
+  justify-content: center;
+}
+
+.seccion1Dificil {
+  padding: 15px 10px 15px 10px;
+  background-color: rgb(255, 174, 174);
+  border-radius: 10px 0 0 10px;
+  margin: 0 auto; 
+  max-width: 800px; 
+}
+
+.seccion2Dificil {
+  background-color: rgb(255, 174, 174);
+  border-radius: 0 10px 10px 0;
+  width: 100%; 
+  max-width: 350px; 
+  padding: 20px;
+  margin: 0 auto; 
+}
+
+.estadisticaDificil{
+  box-sizing: border-box;
+  height: 90px;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+	justify-content: space-around;
+  text-align: center;
+  margin-top: 45px;
+  border: 2px solid #fffffffa;
+}
+h1{
+  text-align: center;
+}
+
+img{
+  width: 80%;
+}
+
+
+
+/*botones*/
+
+.btnModalSalir{
+  font-family: fantasy;
+  background-color: rgb(197, 183, 158);
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  margin: auto;
+  margin-right: 10px;
+  border: none;
+}
+
+.btnModalSalir:hover{
+  background-color: rgb(153, 135, 102);
+  transform: scale(1.1);
+}
+
+#ModalCambio{
+  border-bottom-left-radius: 5px;
+}
+.btnMemoria {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  height: 100px;  
+  width: 100px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: bold;
+  color: #fa9999;
+}
+
+.btnMemoria:hover {
+  background-color: #777676;
+  cursor: pointer;
+}
+
+/*modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.ContenidoModal {
+  background-color: #fffffffa;
+  margin: 15%;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+
+.ContenidoModal h5, .ContenidoModal button , .ContenidoModal h6{
+  margin-top: 20px;
+}
+
+#mensajeDerrota>.ContenidoModal {
+  background-color: rgb(202, 58, 58);
+}
+
+#mensajeVictoria>.ContenidoModal {
+  background-color: rgb(25, 196, 53);
+}
+
+
+/*--------------------Botones---------------------------*/
+
+/*facil*/
+.btnFacil {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #000;
+  background: #00ff2a;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: "Pixelify Sans", sans-serif;
+  margin-right:30px ;
+ }
+ 
+.btnFacil:before, .btnFacil:after {
+  content: "";
+  position: absolute;
+  background: #00ff2a;
+  transition: all .2s linear;
+ }
+ 
+ .btnFacil:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+  
+ }
+ 
+ .btnFacil:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+
+ .btnFacil:active {
+  transform: scale(0.95);
+ }
+ 
+ .btnFacil:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+  background: #00ff2a;
+ }
+ 
+ .btnFacil:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+  background: #00ff2a;
+ }
+
+ .btnFacil:hover {
+  background: #00ff2a;
+ }
+ 
+ .btnFacil span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }
+
+ /* DIFICIL */
+
+ .btnDificil {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #000;
+  background: #ff0000;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: "Pixelify Sans", sans-serif;
+ }
+ 
+.btnDificil:before, .btnDificil:after {
+  content: "";
+  position: absolute;
+  background: #ff0000;
+  transition: all .2s linear;
+ }
+ 
+ .btnDificil:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+  
+ }
+ 
+ .btnDificil:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+
+ .btnDificil:active {
+  transform: scale(0.95);
+ }
+ 
+ .btnDificil:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+  background: #ff0000;
+ }
+ 
+ .btnDificil:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+  background: #ff0000;
+ }
+
+ .btnDificil:hover {
+  background: #ff0000;
+ }
+ 
+ .btnDificil span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }
+
+
+ .btnCustom {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #000;
+  background: #ffffff;
+  user-select: none;
+  white-space: nowrap;
+  transition: all .05s linear;
+  font-family: "Pixelify Sans", sans-serif;
+  margin-right: 10px;
+ }
+ 
+.btnCustom:before, .btnCustom:after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  transition: all .2s linear;
+ }
+ 
+ .btnCustom:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+ }
+ 
+ .btnCustom:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+
+ .btnCustom:active {
+  transform: scale(0.95);
+ }
+ 
+ .btnCustom:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+ }
+ 
+ .btnCustom:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+ }
+ 
+ .btnCustom span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }
